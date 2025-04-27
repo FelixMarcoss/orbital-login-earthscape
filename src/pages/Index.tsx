@@ -1,6 +1,7 @@
 
 import Earth from "@/components/Earth";
 import LoginForm from "@/components/LoginForm";
+import Comet from "@/components/Comet";
 
 const Index = () => {
   return (
@@ -15,10 +16,12 @@ const Index = () => {
         }}
       />
       
+      <Comet />
+      
       <div className="container mx-auto px-4 min-h-screen flex flex-col items-center">
         {/* Logo and title */}
         <div className="text-center mt-10 mb-8">
-          <h1 className="text-4xl font-bold text-white mb-2">
+          <h1 className="text-6xl font-bold text-white mb-3">
             Cmostec <span className="text-blue-400">Automação</span>
           </h1>
           <p className="text-gray-400 text-sm">
