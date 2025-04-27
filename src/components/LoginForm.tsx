@@ -2,18 +2,17 @@
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
 import { Eye, EyeOff } from 'lucide-react';
 
 const LoginForm = () => {
   const [showPassword, setShowPassword] = React.useState(false);
 
   return (
-    <div className="w-full max-w-[400px] p-8 rounded-xl bg-white/5 backdrop-blur-lg border border-white/10">
+    <div className="w-full max-w-[400px] p-8 rounded-xl bg-black/30 backdrop-blur-lg border border-white/10">
       <h2 className="text-2xl font-semibold text-white mb-6">Login</h2>
       <form className="space-y-6">
         <div className="space-y-2">
-          <Label htmlFor="email" className="text-sm text-gray-200">Email</Label>
+          <label htmlFor="email" className="text-sm text-gray-200">Email</label>
           <Input
             id="email"
             type="email"
@@ -22,7 +21,7 @@ const LoginForm = () => {
           />
         </div>
         <div className="space-y-2">
-          <Label htmlFor="password" className="text-sm text-gray-200">Password</Label>
+          <label htmlFor="password" className="text-sm text-gray-200">Password</label>
           <div className="relative">
             <Input
               id="password"
@@ -46,7 +45,7 @@ const LoginForm = () => {
               id="remember"
               className="w-4 h-4 rounded border-gray-600 bg-white/10"
             />
-            <Label htmlFor="remember" className="text-sm text-gray-200">Remember me</Label>
+            <label htmlFor="remember" className="text-sm text-gray-200">Remember me</label>
           </div>
           <a href="#" className="text-sm text-blue-400 hover:text-blue-300">
             Forgot password?
